@@ -1,0 +1,15 @@
+
+
+[{
+ "galleryHome" : "",
+"id" : "homepage",
+"idleMode" : false,
+"imageCrop" : false,
+"modal" : false,
+"thumbnails" : false,
+"showImagenav" : true,
+"showCounter" : true,
+"showInfo" : true,
+"slidesLocation" : "",
+"height" : "1\/3.757","theme" : "blank","showInfo" : false,"autoplay" : "5000","showImagenav" : false,"transition" : "fade","showCounter" : false,"transitionSpeed" : "5000","imageCrop" : "landscape",
+"slides" : [{"description" : "", "title" : "", "url" : "/assets/images/slideshow/24_BLS_0013.jpg"},{"description" : "", "title" : "", "url" : "/assets/images/slideshow/28_BLS_0146.jpg"},{"description" : "", "title" : "", "url" : "/assets/images/slideshow/20_BLS_0064.jpg"},{"description" : "", "title" : "", "url" : "/assets/images/slideshow/44_BLS_0072.jpg"},{"description" : "", "title" : "", "url" : "/assets/images/slideshow/21_BLS_0002.jpg"},{"description" : "", "title" : "", "url" : "/assets/images/slideshow/36_BLS_0020.jpg"},{"description" : "", "title" : "", "url" : "/assets/images/slideshow/43_BLS_0095.jpg"}]}]
