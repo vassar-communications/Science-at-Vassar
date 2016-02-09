@@ -48,7 +48,7 @@ $fontColor: #524F4C;
 
 $html--backgroundColor: $white;
 $body--backgroundColor: transparent;
-$u-lHeader--backgroundColor: $dkBronze;
+$u-lHeader--backgroundColor: transparent;
 $u-lFooter--backgroundColor: transparent;
 
 /* MODULES
@@ -233,14 +233,14 @@ $u-Search__submit--mobileIconColor: $white;
 $u-Search__submit--mobileIconColorHoverFocus: $linkColorHoverFocus;
 $u-Search__submit--mobileIconColorActivated: $linkColor;
 
-$u-Search__submit--iconColor: $white;
-$u-Search__submit--iconColorHoverFocus: $white;
-$u-Search__submit--iconColorActivated: $white;
+$u-Search__submit--iconColor: $bronze;
+$u-Search__submit--iconColorHoverFocus: $linkColorHoverFocus;
+$u-Search__submit--iconColorActivated: $linkColorActive;
 
 $u-Search__submit--mobileBgColor: $dkBronze; /* this color needs to match the hard-coded value of the input border found in modules/search.scss */
-$u-Search__submit--bgColor: $bronze;
-$u-Search__submit--bgColorHoverFocus: $linkColorHoverFocus; 
-$u-Search__submit--bgColorActive: $linkColor;
+$u-Search__submit--bgColor: $white;
+$u-Search__submit--bgColorHoverFocus: $white; 
+$u-Search__submit--bgColorActive: $white;
 
 $u-Search__field--mobileBgColor: #fff;
 $u-Search__field--bgColor: transparent;
@@ -249,7 +249,7 @@ $searchBackgroundColor: #fff;
 
 $u-Search__field--font: $fontWeightNormal 1em $sans-serif;
 $u-Search__field--textColor: $fontColor;
-$u-Search__field--placeholderColor: $fontColor;
+$u-Search__field--placeholderColor: $bronze;
 
 $u-Search--borderSize: border-bottom;
 $u-Search--borderSettings: none;

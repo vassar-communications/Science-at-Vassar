@@ -85,6 +85,9 @@ li {
 .u-lMain {
 	font-size: 100%;
 }
+.u-VCard--site .u-VCard__item.u-VCard__url {
+    font: 700 1em/1.2 ingra, Helvetica;
+}
 .u-pageTitle {
 	margin-top: 0;
 }
@@ -107,6 +110,9 @@ li {
         margin: 0;
         font-weight: $fontWeightNormal;
     }
+}
+.u-Figure__caption {
+    font-style: italic;
 }
 .Module--deadlines {
      border-top: 1px solid;
@@ -179,6 +185,9 @@ li {
         @include v-pixel-fallback ('font-size', 1.3rem);
     }
 }
+.u-VCard--site {
+    padding: .5em .5em .01em;
+}
 /* u-lAside sidebar styles */
 
 .u-lAside {
@@ -226,50 +235,68 @@ li {
 .u-SiteMap__level {
 	 margin: .5em 0;
 }
+.u-Masthead {
+	text-align: center;
+}
 .u-Masthead__siteName,
 .u-Masthead__vassar {
 	padding: 0;
 	margin-bottom: 0;
 }
 .u-Masthead__siteName {
-    font-size: 2.5em;
-    text-align: center;
-    padding: .2em 0 .5em;
+    padding: .5em 0;
     text-transform: uppercase;
-    letter-spacing: .02em;
+}
+h1.u-Masthead__siteName {
+    line-height: 1;
+}
+.u-Masthead__siteName--line1 {
+    font-size: 1.25em;
+    font-weight: $fontWeightBold;
+}
+.u-Masthead__siteName--line2 {
+    font-size: .5em;
+    text-align: center;
 }
 @media all and (min-width: $small) {
     .u-Masthead__vassar {
         text-transform: uppercase;
     }
-    .u-Masthead__siteName {
-        font-size: 3em;
-        padding: 2em 0 .8em;
+    .u-Masthead__siteName--line2 {
+        text-align: right;
+    }
+    .u-Masthead {
+        text-align: left;
     }
 }
 @media all and (min-width: $large) {
-    .u-Masthead__siteName {
-        padding: 1em 0 .8em;
-    }
 }
 /* ==============================
  *	LAYOUT
  * ==============================
  */
+.u-Masthead__vassar,
+.u-VCard__item--poBox {
+    display: none;
+    visibility: hidden;
+}
 @media screen {
-    html.u-pageHome {
-        padding: 12em 0 0;
-    }
     html {
-        padding: 12.25em 0 0;
+        padding: 10.9em 0 0;
         position: relative;
     }
     body {
         position: static;
-        margin-top: 1em;
+        margin-top: 1.6em;
+    }
+    .u-Masthead__siteName {
+        display: inline-block;
+    }
+    .u-Masthead__siteName--line2 {
+        display: block;
     }
     .u-pageHome body {
-        margin-top: 38%;
+        margin-top: 40%;
     }
     .u-lHeader {
         padding: 0;
@@ -278,35 +305,34 @@ li {
         right: 0;
         top: 0;
     }
+    .u-Masthead {
+        margin: 0 3%;
+    }
     .galleria--content {
         margin: 0;
     }
     .u-Masthead__siteName--line1 {
-        display: block;
-        height: 1.7em;
-        width: 5em;
-        margin: 0 auto .8em;
     }
     .u-lFooter {
-        height: 34em;
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -34em;
+        height: 15em;
+        bottom: -15em;
     }
-    /* .u-Figure {
-        margin: 1.25em 0 1.25em;
-    } */
+    .u-pageInner .u-lFooter {
+        height: 24em;
+        bottom: -24em;
+    }
     .u-VCard--site {
         max-width: 25em;
         margin: 0 auto;
     }
-    .u-VCard__adr, .u-VCard__url {
-        display: inline-block;
-        padding: 0.5em;
+    .u-pageInner .u-VCard--site {
+        margin-top: 12em;
     }
-    .u-VCard ul {
-        padding: 0.5em;
+    .u-VCard__info {
+        margin-top: 0;
     }
     .u-List--site li {
         margin-bottom: 0;
@@ -334,15 +360,6 @@ li {
     }
 }
 @media all and (min-width: 24.38em) {
-    html {
-        padding: 9.25em 0 0;
-    }
-    html.u-pageHome {
-        padding: 8.75em 0 0;
-    }
-    .u-pageHome body {
-        margin-top: 35%;
-    }
     .Module--deadlinesShortList {
         .u-Figure__image {
             height: 7.5em;
@@ -356,21 +373,18 @@ li {
     }
 }
 @media all and (min-width: $small) {
-    html {
-        padding: 12.25em 0 0;
+    .u-pageHome body {
+        margin-top: 38%;
     }
-    html.u-pageHome {
-        padding: 13.5em 0 0;
+    html {
+        padding: 6.9em 0 0;
     }
     body {
-        margin-top: 1.5em;
-    }
-    .u-pageHome body {
-        margin-top: 28%;
+        margin-top: 0;
     }
     .u-Search {
-        right: 2em;
-        top: 2em;
+        right: 3%;
+        top: 1em;
     }
     .u-Masthead__vassar {
         position: absolute;
@@ -406,12 +420,6 @@ li {
     }
 }
 @media all and (min-width: $large) {
-    html {
-        padding: 9.5em 0 0;
-    }
-    html.u-pageHome {
-        padding: 9.5em 0 0;
-    }
     .u-Search {
         width: 15%;
     }
@@ -429,11 +437,22 @@ li {
         }
     }
 }
-
+@media all and (min-width: 75em) {
+    .u-Masthead {
+        max-width: 75em;
+        margin: 0 auto;
+    }
+    .u-Search {
+        right: 16%;
+    }
+}
 /* ==============================
  *	COLOR
  * ==============================
  */
+html {
+    border-top: 5px solid $bronze;
+}
 a,
 .Module__link,
 .u-lAside a {
@@ -472,13 +491,12 @@ h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
     border: 8px solid $dkBronze;
 }
 .galleria--homepage {
-    border-top: #CFCCC9 .35em solid;
+    border-top: tint($bronze, 60%) .1em solid;
 }
-.u-pageInner .u-lHeader {
-    border-bottom: $bronze .35em solid;
+.u-pageInner .u-Masthead {
+    border-bottom: tint($bronze, 60%) 1px solid;
 }
-.galleria--homepage:before,
-.u-pageInner .u-lHeader:before {
+.galleria--homepage:before {
     content: "";
     position: absolute;
     display: block;
@@ -504,12 +522,12 @@ h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
     );
 }
 .u-Masthead__siteName--link {
-    @include link-colors($green, $linkColorActive, $linkColor, $green, $linkColorActive);
-    text-shadow:
-    -1px -1px 0 $white,  
-    1px -1px 0 $white,
-    -1px 1px 0 $white,
-    1px 1px 0 $white;
+    .u-Masthead__siteName--line1 {
+        @include link-colors($green, $linkColorActive, $linkColor, $green, $linkColorActive);
+    }
+    .u-Masthead__siteName--line2 {
+        @include link-colors($bronze, $linkColorActive, $linkColor, $bronze, $linkColorActive);
+    }
 }
 .u-NavSite__item--isCurrent,
 .u-NavSite__item--isOpen .u-NavSite__item,
@@ -518,15 +536,24 @@ h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
     @include link-colors($bronze, $linkColorHoverFocus, $linkColorActive, $bronze, $linkColorHoverFocus);
 }
 .u-lFooter {
-    background: #000 url(../images/css/BLS-Bridge-night-1511-KR_0112.jpg) center center no-repeat;
-    background-size: cover;
+    background-color: $dkBronze;
 }
-.u-VCard__url,
-.u-VCard__adr, 
-.u-List--site,
-.u-VCard__info {
-    background-color: rgb(13, 20, 62);
-    background-color: rgba(13, 20, 62, 0.62);
+.u-pageInner {
+    .u-lFooter {
+        background: #000 url(../images/slideshow/24_BLS_0013.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    /* .u-VCard__url,
+    .u-VCard__adr, 
+    .u-List--site,
+    .u-VCard__info {
+        background-color: rgb(13, 20, 62);
+        background-color: rgba(13, 20, 62, 0.62);
+    } */
+    .u-VCard--site {
+        background-color: rgb(13, 53, 84);
+        background-color: rgba(13, 53, 84, 0.51);
+    }
 }
 h2 {
     color: $green;
@@ -535,14 +562,20 @@ h2 {
     color: $linkColor;
 }
 .u-lContent h2 {
-    border-bottom: 1px solid tint($bronze, 60%);
 }
-.Module--sidebar {
+.Module--sidebar,
+.u-lAside .u-Figure {
     margin: 0 0 1.5em;
     border-bottom: 1px solid tint($bronze, 60%);
 }
+.u-lAside .u-Figure {
+    padding-bottom: 1.5em;
+}
 a .bridging {
     @include link-colors($bronze, $linkColorHoverFocus, $linkColorActive, $bronze, $linkColorHoverFocus);
+}
+.u-Figure__caption {
+    color: $bronze;
 }
 .Module--deadlines {
      border-top: none;
@@ -557,8 +590,7 @@ a .bridging {
         color: $dkBronze;
     }
     .Module__desc__location,
-    .Module__desc__contact,
-    .u-Figure__caption {
+    .Module__desc__contact {
         color: $bronze;
     }
     .Module__item:last-of-type {
@@ -617,6 +649,9 @@ $u-NavSite__level--borderColor: 1px solid tint($bronze, 60%);
 @media all and (min-width: $small) {
     .u-Search__field {
         border: none;
+    }
+    .u-Search {
+        border-bottom: 1px solid tint($bronze, 60%);
     }
 }
 /* Main Area Modules */
@@ -685,27 +720,24 @@ $u-NavSite__level--borderColor: 1px solid tint($bronze, 60%);
     display: block;
 }
 .Module--halfWidth {
-    padding: 4% 0;
+    padding: 4%;
 }
 @media all and (min-width: $small) {
 		.modulesArea {
 			border-bottom: none;
-		}
-		.Module--halfWidth:nth-child(2n+1) {
-			padding-right: 1.424em;
 		}
 }
 @media all and (min-width: $large) {
         .modulesArea__row--twocols {
             display: flex;
         }
-        .Module--halfWidth {
-            padding: 0;
-        }
 		.Module--halfWidth {
 			width: 50%;
             flex-direction: column;
 			float: left;
+		}
+		.Module--halfWidth:nth-child(2n+1) {
+			margin-right: 1.424em;
 		}
 }
 /* COLOR */
@@ -733,6 +765,9 @@ $u-NavSite__level--borderColor: 1px solid tint($bronze, 60%);
 	.Module__listItem {
 		border-top: tint($bronze, 60%);
 	}
+    .Module--halfWidth {
+		background-color: tint($blue, 90%);
+    }
 }
 .Module--sidebar .Module__listItem {
     border-top: tint($bronze, 60%);

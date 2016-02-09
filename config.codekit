@@ -38,6 +38,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/0038_12_06_BL_6385.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51710,
+		"inputAbbreviatedPath": "\/assets\/images\/0038_12_06_BL_6385.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/0038_12_06_BL_6385.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/0082_14_10_KR_0009.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110640,
+		"inputAbbreviatedPath": "\/assets\/images\/0082_14_10_KR_0009.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/0082_14_10_KR_0009.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/1885-Sunspots_013.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -122,6 +144,17 @@
 		"initialSize": 2937,
 		"inputAbbreviatedPath": "\/assets\/images\/css\/bridging-logo-bronze.png",
 		"outputAbbreviatedPath": "\/assets\/images\/css\/bridging-logo-bronze.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Geology-10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134268,
+		"inputAbbreviatedPath": "\/assets\/images\/Geology-10.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Geology-10.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -386,6 +419,17 @@
 		"initialSize": 52518,
 		"inputAbbreviatedPath": "\/assets\/images\/spark1.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/spark1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/Stream-Study-06-WG-36.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78223,
+		"inputAbbreviatedPath": "\/assets\/images\/Stream-Study-06-WG-36.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/Stream-Study-06-WG-36.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
