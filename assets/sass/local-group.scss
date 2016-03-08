@@ -383,8 +383,20 @@ h1.u-Masthead__siteName {
         margin-top: 0;
     }
     .u-Search {
-        right: 3%;
         top: 1em;
+        width: inherit;
+        max-width: 75em;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+    }
+    .u-Search__form {
+        background-color: transparent;
+        width: 14em;
+        border-bottom: 1px solid tint($bronze, 60%);
+        position: absolute;
+        right: 0;
     }
     .u-Masthead__vassar {
         position: absolute;
@@ -420,9 +432,6 @@ h1.u-Masthead__siteName {
     }
 }
 @media all and (min-width: $large) {
-    .u-Search {
-        width: 15%;
-    }
     .Module--deadlinesShortList {
         .u-Figure__image {
             border-radius: 6em;
@@ -441,9 +450,6 @@ h1.u-Masthead__siteName {
     .u-Masthead {
         max-width: 75em;
         margin: 0 auto;
-    }
-    .u-Search {
-        right: 16%;
     }
 }
 /* ==============================
@@ -649,9 +655,6 @@ $u-NavSite__level--borderColor: 1px solid tint($bronze, 60%);
 @media all and (min-width: $small) {
     .u-Search__field {
         border: none;
-    }
-    .u-Search {
-        border-bottom: 1px solid tint($bronze, 60%);
     }
 }
 /* Main Area Modules */
