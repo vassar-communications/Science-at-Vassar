@@ -790,3 +790,22 @@ $u-NavSite__level--borderColor: 1px solid tint($bronze, 60%);
 	@include v-pixel-fallback("font-size", 1rem);
 }
 /* end main module styles */
+
+/* alert styles */
+html.is-alert {
+	padding: 0;
+	.u-lHeader {
+    	position: relative;
+	}
+	.u-lFooter {
+    	bottom: 0;
+		position: relative;
+	}
+}
+.u-pageHome.is-alert {
+	body {
+   		margin-top: 0;
+	}
+}
+
+/* end alert */
